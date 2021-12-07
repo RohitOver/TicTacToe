@@ -4,7 +4,6 @@
 **Project Name** : TicTacToe App  
 **Name** : Rohit Mitra  
 **BITS ID** : 2018A7PS0206G  
-
 **Email ID** : f20180206@goa.bits-pilani.ac.in
 
 ## b)
