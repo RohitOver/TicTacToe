@@ -7,27 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".DashboardFragment">
 
-  <TextView
-      android:id="@+id/txt_score"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/placeholder"
-      android:textAppearance="@style/TextAppearance.AppCompat.Large"
-      app:layout_constraintBottom_toTopOf="@+id/list"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
 
   <androidx.recyclerview.widget.RecyclerView
       android:id="@+id/list"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_width="408dp"
+      android:layout_height="498dp"
       app:layoutManager="LinearLayoutManager"
 
       app:layout_constraintBottom_toBottomOf="parent"
-      tools:layout_editor_absoluteX="16dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.963"
       tools:listitem="@layout/fragment_item" />
-
 
   <com.google.android.material.floatingactionbutton.FloatingActionButton
       android:id="@+id/fab_new_game"
@@ -37,5 +28,64 @@
       android:contentDescription="@string/new_game"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:srcCompat="@android:drawable/ic_input_add" />
+      app:srcCompat="@android:drawable/ic_input_add"
+      tools:ignore="ImageContrastCheck" />
+
+  <TextView
+      android:id="@+id/txt_wins"
+      android:layout_width="124dp"
+      android:layout_height="47dp"
+      android:text="@string/wins"
+      android:textAlignment="center"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/txt_losses"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.233"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.712" />
+
+  <TextView
+      android:id="@+id/txt_losses"
+      android:layout_width="118dp"
+      android:layout_height="49dp"
+      android:text="@string/losses"
+      android:textAlignment="center"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.249"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.217" />
+
+  <TextView
+      android:id="@+id/edit_losses"
+      android:layout_width="125dp"
+      android:layout_height="46dp"
+      android:textAlignment="center"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.604"
+      app:layout_constraintStart_toEndOf="@+id/txt_losses"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.22" />
+
+  <TextView
+      android:id="@+id/edit_wins"
+      android:layout_width="123dp"
+      android:layout_height="44dp"
+      android:textAlignment="center"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/edit_losses"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.565"
+      app:layout_constraintStart_toEndOf="@+id/txt_wins"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.7" />
 </androidx.constraintlayout.widget.ConstraintLayout>

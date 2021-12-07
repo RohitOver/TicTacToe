@@ -24,4 +24,14 @@
   <string name="yes">Yes</string>
   <string name="cancel">Cancel</string>
   <string name="confirm">Confirm</string>
+    <string name="congrats">Congratulations!</string>
+  <string name="ok">OK</string>
+  <string name="sorry">SORRY!</string>
+  <string name="draw">DRAW!</string>
+    <string name="congrats_dialog_message">You won the game.</string>
+  <string name="draw_dialog_message">It is a Draw.</string>
+  <string name="sorry_dialog_message">You lost the game.</string>
+    <string name="wins">WINS</string>
+  <string name="losses">LOSSES</string>
+  <string name="game_created_by">Game Created By:</string>
 </resources>

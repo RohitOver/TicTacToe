@@ -1,20 +1,44 @@
-# Tic Tac Toe
+# TicTacToeApp
 
-This is a starter code for the Tic Tac Toe multiplayer game app assignment.
+## a)
+**Project Name** : TicTacToe App  
+**Name** : Rohit Mitra  
+**BITS ID** : 2018A7PS0206G  
 
-It uses Android Navigation Component, with a single activity and three fragments:
+**Email ID** : f20180206@goa.bits-pilani.ac.in
 
-- The DashboardFragment is the home screen. If a user is not logged in, it should navigate to the
-LoginFragment. (See the TODO comment in code.)
+## b)
+**App Description** :    
+This Android app lets the user play a single player or a 2 player version of the TicTacToe game while also keeping a track of the user's wins & losses. 
 
-- The floating button in the dashboard creates a dialog that asks which type of game to create and
-passes that information to the GameFragment (using SafeArgs).
+**Bugs**: Sometimes the app crashes in 2 player mode.  
 
-- The GameFragment UI has a 3x3 grid of buttons. They are initialized in the starter code.
-Appropriate listeners and game play logic needs to be provided.
+## c)
+**Task 1 Description**:  
+Implemented the *Sign In* system using [Firebase database](https://firebase.google.com/docs) and Nav graphs.  
+Used *RecyclerView* to display all open games available.
 
-- Pressing the back button in the GameFragment opens a dialog that confirms if the user wants to
-forfeit the game. (See the FIXME comment in code.)
+   
+**Task 2 Description**:  
+Stored the TicTacToe game in [Firebase database](https://firebase.google.com/docs).  
+Used [*NavBackStack*](https://developer.android.com/guide/navigation/navigation-programmatic#returning_a_result) to return back responses (WIN, LOSS or DRAW) from *Gamefragment*.
+   
+**Task 3 Description**:  
+Stored the TicTacToe game in [Firebase database](https://firebase.google.com/docs) and as and when any of the 2 users makes a change to the game, the database is updated & the corresponding UI is displayed on both the user's screens
 
-- A "log out" action bar menu is shown on both the dashboard and the game fragments. Clicking it
-should log the user out and show the LoginFragment. This click is handled in the MainActivity.
+## d)
+------
+
+## e)
+**Testing**:     
+Accessibility Testing not done.  
+
+## f)
+**Time taken**: 5 hours
+    
+## g)
+**Assignment Difficulty** : 9 out of 10
+
+
+
+
